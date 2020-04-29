@@ -1,14 +1,22 @@
 {
-  "name": "mn-reg-number",
+  "name": "@aggregator/mn-reg-number",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 0"
   },
+  "author": "Aggregator <it@aggregator.mn>",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Digital-Aggregator/mn-reg-number.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Digital-Aggregator/mn-reg-number/issues"
+  },
+  "homepage": "https://github.com/Digital-Aggregator/mn-reg-number#readme",
+  "description": "",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@Digital-Aggregator"
-  },
-  "author": "Aggregator <it@aggregator.mn>",
-  "license": "ISC"
+  }
 }

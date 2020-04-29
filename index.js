@@ -1,6 +1,6 @@
 function isRegister(reg_no) {
-    const regex = RegExp('^[А-Я|Ө|Ү]{2}\\d{8}$');
-    return regex.test(reg_no);
+    const regex = RegExp('^[А-Я|Ө|Ү]{2}\\d{8}$')
+    return regex.test(reg_no)
 }
 
 function getBirth(reg_no) {
@@ -58,14 +58,14 @@ function getBirthLocation(reg_no) {
 
 function getAge(reg_no) {
 	if (isRegister(reg_no)) {
-		var today = new Date();
-		var birthDate = new Date(getBirth(reg_no));
-		var age = today.getFullYear() - birthDate.getFullYear();
-		var m = today.getMonth() - birthDate.getMonth();
+		var today = new Date()
+		var birthDate = new Date(getBirth(reg_no))
+		var age = today.getFullYear() - birthDate.getFullYear()
+		var m = today.getMonth() - birthDate.getMonth()
 		if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-			age--;
+			age--
 		}
-		return age;
+		return age
 	} else return 'Регистрийн дугаар тохирохгүй байна'
 }
 
